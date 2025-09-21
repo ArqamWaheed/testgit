@@ -5,7 +5,7 @@ test('Capitalizes the first letter', () => {
 });
 
 test('Reverses a string', () => {
-  expect(reverseString("hello").toBe("olleh"));
+  expect(reverseString("hello")).toBe("olleh");
 });
 
 test('Addition of two numbers', () => {
@@ -29,7 +29,7 @@ test('Cipher textWrapping', () => {
 });
 
 test('Cipher upperCase', () => {
-  expect(caesarCipher('HeLLo', 3)).toBe('Kh00r');
+  expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
 });
 
 test('Cipher Punctuation', () => {
@@ -37,7 +37,7 @@ test('Cipher Punctuation', () => {
 });
 
 test('Analyze array function', () => {
-  expect(analyzeArray([1,8,3,4,2,6])).toBe({
+  expect(analyzeArray([1,8,3,4,2,6])).toStrictEqual({
    average: 4,
    min: 1,
    max: 8,
